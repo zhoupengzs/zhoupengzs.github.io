@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; Charset=gb2312">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<title>01组-企业应用开发展示</title>
+		<link rel="shortcut icon" href="images/Logo_40.png" type="image/x-icon">
+		<!--Layui-->
+		<link href="plug/layui/css/layui.css" rel="stylesheet" />
+		<!--font-awesome-->
+		<link href="plug/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+		<!--全局样式表-->
+		<link href="css/global.css" rel="stylesheet" />
+		<!-- 本页样式表 -->
+		<link href="css/home.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<!-- 导航 -->
+		<nav class="blog-nav layui-header">
+			<div class="blog-container">
+
+				<a href="javascript:;" class="blog-user">
+					<img src="images/Blog.png" alt="Blog" title="Blog" />
+
+				</a>
+				
+				<a class="blog-logo" href="index.html">01组-企业应用开发</a>
+
+				<!-- 手机和平板的导航开关 -->
+				<a class="blog-navicon" href="javascript:;">
+					<i class="fa fa-navicon"></i>
+				</a>
+			</div>
+		</nav>
+		<!-- 主体（一般只改变这里的内容） -->
+		<div class="blog-body">
+			<!-- canvas -->
+			<canvas id="canvas-banner" style="background: #393D49;"></canvas>
+			<!--为了及时效果需要立即设置canvas宽高，否则就在home.js中设置-->
+			<script type="text/javascript">
+				var canvas = document.getElementById('canvas-banner');
+				canvas.width = window.document.body.clientWidth - 10; //减去滚动条的宽度
+				if(screen.width >= 992) {
+					canvas.height = window.innerHeight * 1 / 3;
+				} else {
+					canvas.height = window.innerHeight * 2 / 7;
+				}
+			</script>
+			<!-- 这个一般才是真正的主体内容 -->
+			<div class="blog-container">
+				<div class="blog-main">
+					<!-- 网站公告提示 -->
+					<div class="home-tips shadow">
+						<i style="float:left;line-height:17px;" class="fa fa-volume-up"></i>
+						<div class="home-tips-container">
+							<span style="color: #009688">01组企业应用开发学习成果</span>
+							<span style="color: red">ERP系统</span>
+
+						</div>
+					</div>
+					<!--左边文章列表-->
+					<div class="blog-main-left">
+						<div class="article shadow">
+							<div class="article-left">
+								<img src="images/require.PNG" alt="电子光码盘需求分析" />
+							</div>
+							<div class="article-right">
+								<div class="article-title">
+									<a href="html/interface.html">电子光码盘需求调研</a>
+								</div>
+								<div class="article-abstract">
+									基于常规功能、异常状况、性能要求方面的需求调研
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div class="article-footer">
+								<span><i class="fa fa-clock-o"></i>&nbsp;&nbsp;2018-05-09</span>
+								<span class="article-author"><i class="fa fa-user"></i>&nbsp;&nbsp;01组</span>
+								<span><i class="fa fa-tag"></i>&nbsp;&nbsp;<a href="#">需求分析</a></span>
+							</div>
+						</div>
+						<div class="article shadow">
+							<div class="article-left">
+								<img src="images/view.png" alt="ERP系统界面设计" />
+							</div>
+							<div class="article-right">
+								<div class="article-title">
+									<a href="erp/首页.html">ERP系统界面设计</a>
+								</div>
+								<div class="article-abstract">
+									使用axcure设计的界面原型
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div class="article-footer">
+								<span><i class="fa fa-clock-o"></i>&nbsp;&nbsp;2018-05-08</span>
+								<span class="article-author"><i class="fa fa-user"></i>&nbsp;&nbsp;01组</span>
+								<span><i class="fa fa-tag"></i>&nbsp;&nbsp;<a href="#">界面设计</a></span>
+							</div>
+						</div>
+						<div class="article shadow">
+							<div class="article-left">
+								<img src="images/database.jpg" alt="ERP系统数据库设计" />
+							</div>
+							<div class="article-right">
+								<div class="article-title">
+									<a href="html/database.html">ERP系统数据库设计</a>
+								</div>
+								<div class="article-abstract">
+									在整个ERP系统开发过程中数据库占有重要地位，数据库是根据企业的业务流程来设计
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div class="article-footer">
+								<span><i class="fa fa-clock-o"></i>&nbsp;&nbsp;2018-05-08</span>
+								<span class="article-author"><i class="fa fa-user"></i>&nbsp;&nbsp;01组</span>
+								<span><i class="fa fa-tag"></i>&nbsp;&nbsp;<a href="#">数据库设计</a></span>
+							</div>
+						</div>
+
+					</div>
+					<!--右边小栏目-->
+					<div class="blog-main-right">
+						<div class="blogerinfo shadow">
+							<div class="blogerinfo-figure">
+								<img src="images/timg.jpg" alt="01组" width="150" height="150"/>
+							</div>
+							<p class="blogerinfo-nickname">01组</p>
+							<p class="blogerinfo-introduce">企业应用开发</p>
+							<p class="blogerinfo-location"><i class="fa fa-location-arrow"></i>&nbsp;China</p>
+							<hr />
+
+						</div>
+						<div></div>
+
+						<div class="blog-module shadow">
+							<div class="blog-module-title">友情链接</div>
+							<ul class="blogroll">
+								<li>
+									<a target="_blank" href="http://www.layui.com/" title="Layui">Layui</a>
+								</li>
+								<li>
+									<a target="_blank" href="http://www.akeyun.com/ERP/zs/" title="云版ERP系统">云版ERP系统</a>
+								</li>
+								<li>
+									<a target="_blank" href="http://www.meifun.com/" title="泛普软件">泛普软件</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<footer class="blog-footer">
+			<p><span>Copyright</span><span>&copy;</span><span>2017</span>
+				<a href="http://www.usefulprogram.cn">编程学习</a><span>Design By Zhou Peng</span></p>
+			<p>
+				<a href="http://www.miibeian.gov.cn/" target="_blank">皖ICP备17029402号</a>
+			</p>
+		</footer>
+
+		<!--分享窗体-->
+		<div class="blog-share layui-hide">
+			<div class="blog-share-body">
+				<div style="width: 200px;height:100%;">
+					<div class="bdsharebuttonbox">
+						<a class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+						<a class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+						<a class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+						<a class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--遮罩-->
+		<div class="blog-mask animated layui-hide"></div>
+		<!-- layui.js -->
+		<script src="plug/layui/layui.js"></script>
+		<!-- 全局脚本 -->
+		<script src="js/global.js"></script>
+		<!-- 本页脚本 -->
+		<script src="js/home.js"></script>
+	</body>
+
+</html>
